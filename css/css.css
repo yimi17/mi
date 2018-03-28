@@ -1,0 +1,365 @@
+@charset "utf-8";
+
+/*---公共部分---*/
+*{margin:0;padding:0;}
+html{font-size:100px;}
+body{font-size:.12rem;}
+img{border:none;}
+a{text-decoration:none;color:#000;}
+ul{list-style:none;}
+.fl{float:left;}
+.fr{float:right;}
+.clearfix:after{content:"";display:block;clear:both;}
+
+
+/*---头部---*/
+#header{
+    position:fixed;
+    top:0;
+    left:50%;
+    width:7.2rem;
+    margin-left:-3.6rem;
+    background: #fafafa;
+    z-index: 3;
+}
+#header .h-search{
+    width:7.2rem;
+    padding:.15rem 0;
+}
+#header .h-search .logo{
+    width: .5rem;
+    height:.5rem;
+    padding:0 .25rem;
+}
+#header .h-search .logo img{
+    width:.5rem;
+    height:.35rem;
+    margin-top:.075rem;
+}
+#header .h-search .input{
+    width: 5.2rem;
+    height:.5rem;
+    line-height:.5rem;
+    font-size:.24rem;
+    color:#ccc;
+    text-indent:.6rem;
+    border:.01rem solid #ccc;
+    box-sizing:border-box;
+    border-radius:.05rem;
+    background:url("../images/search.png") left/cover;
+}
+#header .h-search .login{
+    /*display:block;*/
+    width:1rem;
+    height:.5rem;
+    font-size:.26rem;
+    line-height:.5rem;
+    text-align:center;
+    color:#999;
+    cursor:pointer;
+}
+/*---头部菜单---*/
+#header .h-menu{
+    width:7.2rem;
+    padding-bottom:.04rem;
+}
+#header .h-menu ul{
+    display:flex;
+    justify-content: space-around;
+    width:7.2rem;    
+    text-align:center;
+}
+#header .h-menu ul li{
+    padding:.1rem 0;
+}
+#header .h-menu ul li a{
+    padding-bottom:.1rem;
+    font-size:.24rem;
+    color:#999;
+}
+#header .h-menu ul li a.on{
+    color:#ed6007;
+    border-bottom:2px solid #ed6007;
+}
+
+/*---主体部分---*/
+#main{
+    width:7.2rem;
+    margin:1.35rem auto 1rem;
+}
+#main .m-banner{
+    width:7.2rem;
+}
+#main .m-banner .swiper-container{
+    width:7.2rem;
+    height:3.6rem;
+}
+#main .m-banner .swiper-container .swiper-slide{
+    width:7.2rem;
+    height:3.6rem;
+}
+#main .m-banner .swiper-container .swiper-slide img{
+    width:7.2rem;
+    height:3.6rem;
+}
+#main .m-banner .swiper-container .swiper-pagination{
+    text-align:right;
+}
+#main .m-banner .swiper-container .swiper-pagination span{
+    width:.1rem;
+    height:.1rem;
+    background:#fff;
+    margin:0 .09rem;
+}
+/*---主体导航栏---*/
+#main .m-nav{
+    width:7.2rem;
+}
+#main .m-nav ul{
+    width:7.2rem;
+    display:flex;
+    justify-content: space-around;
+}
+#main .m-nav ul li a img{
+    width:1.44rem;
+    height:1.52rem;
+}
+/*---商城早报---*/
+#main .m-new{
+    width:7.2rem;
+    border-top:1px solid #ccc;
+}
+#main .m-new .img{
+    width:1.5rem;
+    height:.75rem;
+}
+#main .m-new .img img{
+    width:1.5rem;
+    height:.75rem;
+}
+#main .m-new .txt{
+    position:relative;
+    width:5.5rem;
+    height:.75rem;
+    line-height:.75rem;
+    font-size:.24rem;
+}
+#main .m-new .txt a{
+    border-left:1px solid #ccc;
+}
+#main .m-new .txt span{
+    position:absolute;
+    top:0;
+    left:.2rem;
+    opacity:0;
+    transition:.3s;
+}
+#main .m-new .txt span.on{
+    opacity:1;
+}
+/*---图片区域---*/
+#main .m-pic{
+    width:7.2rem;
+}
+#main .m-pic img.img-c{
+    border-top:.15rem solid #f6f6f6;
+    border-bottom:.15rem solid #f6f6f6;
+}
+#main .m-pic .pic-1{
+    width:7.2rem;
+}
+#main .m-pic .pic-1 .left,#main .m-pic .pic-1 .right{
+    width:3.58rem;
+    height:5.08rem;
+}
+#main .m-pic .pic-1 .left img{
+    width:3.58rem;
+    height:5.08rem;
+}
+#main .m-pic .pic-1 .right img{
+    display:block;
+    width:3.58rem;
+    height:2.52rem;
+}
+#main .m-pic .pic-1 .right img.img1{
+    margin-bottom:.04rem;
+}
+#main .m-pic .pic-2{
+    width:7.2rem;
+}
+#main .m-pic .pic-2 img{
+    width:7.2rem;
+    height:2.8rem;
+    margin-top:.1rem;
+}
+#main .m-pic .pic-2 img.img3{
+    height:4.4rem;
+}
+#main .m-pic .pic-3{
+    width:7.2rem;
+}
+#main .m-pic .pic-3 ul{
+    width:7.2rem;
+}
+#main .m-pic .pic-3 ul li{
+    overflow: hidden;
+    float:left;
+    width:3.6rem;
+    box-sizing:border-box;
+}
+#main .m-pic .pic-3 ul li.r-li{
+    border-left:.04rem solid #fff;
+}
+#main .m-pic .pic-3 ul li img{
+    width:3.6rem;
+    height:3.6rem;
+}
+#main .m-pic .pic-3 ul li .txt{
+    width:3.6rem;
+    padding:.1rem 0;
+}
+#main .m-pic .pic-3 ul li .txt p{
+    font-size:.28rem;
+    line-height:.4rem;
+    text-indent:.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#main .m-pic .pic-3 ul li .txt p.p2{
+    color:#999;
+    font-size:.22rem;
+}
+#main .m-pic .pic-3 ul li .txt p.p3{
+    font-size:.3rem;
+    color:#ff6000;
+}
+#main .m-pic .pic-3 ul li .txt p span{
+    font-size:.18rem;
+}
+#main .m-pic .pic-3 ul li .txt p del{
+    font-size:.18rem;
+    color:#999;
+}
+#main .m-pic .pic-4,#main .m-pic .pic-4 img{
+    width:7.2rem;
+}
+#main .m-pic .pic-6,#main .m-pic .pic-6 img{
+    width:7.2rem;
+}
+/*---h2是公共部分---*/
+#main .m-pic h2{
+    width:7.2rem;
+    height:1rem;
+    line-height:1rem;
+    font-size:.3rem;
+    font-weight:normal;
+    text-align: center;
+}
+#main .m-pic h2 a{
+    color:#999;
+}
+#main .m-pic .pic-6 ul{
+    width:7.2rem;
+}
+#main .m-pic .pic-6 ul li{
+    float:left;
+    width:3.6rem;
+    height:3.6rem;
+}
+#main .m-pic .pic-6 ul li img{
+    width:3.6rem;
+    height:3.6rem;
+}
+#main .m-pic .pic-6 ul li p{
+    font-size:.28rem;
+    margin-left:.4rem;
+}
+#main .m-pic .pic-6 ul li p.p1{
+    margin-top:.6rem;
+}
+#main .m-pic .pic-6 ul li p.p2{
+    font-size:.22rem;
+    color:#999;
+    margin-top:.1rem;
+    margin-bottom:.3rem;
+}
+#main .m-pic .pic-6 ul li p.p3{
+    color:#f66000;
+}
+#main .m-pic .pic-6 ul li p span{
+    font-size:.2rem;
+}
+#main .m-pic .pic-6 ul li p del{
+    font-size:.2rem;
+    color:#999;
+}
+#main .m-pic .pic-7,#main .m-pic .pic-7 ul{
+    width:7.2rem;
+}
+#main .m-pic .pic-7 img{
+    display:block;
+    width:7.2rem;
+}
+#main .m-pic .pic-7 ul li{
+    float:left;
+    width:3.58rem;
+    height:4.8rem;
+    box-sizing: border-box;
+}
+#main .m-pic .pic-7 ul li.r-li{
+    border-left:.04rem solid #fff;
+}
+#main .m-pic .pic-7 ul li img{
+    width:3.58rem;
+    height:4.8rem;
+}
+
+/*---页脚部分---*/
+#footer{
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    z-index: 3;
+    border-top:.01rem solid #ccc;
+    background:#fff;
+}
+#footer ul{
+    display:flex;
+    justify-content: space-around;
+}
+#footer ul li{
+    width:25%;
+    height:.9rem;
+    text-align: center;
+}
+#footer ul li:nth-child(2) a span{
+    background-position: 0 -.4rem;
+}
+#footer ul li:nth-child(3) a span{
+    background-position: 0 -1.2rem;
+}
+#footer ul li:nth-child(4) a span{
+    background-position: 0 -2rem;
+}
+#footer ul li a{
+    display:block;
+    width:100%;
+    height:.9rem;
+}
+#footer ul li a span{
+    display:block;
+    width:.4rem;
+    height:.4rem;
+    margin:.1rem auto 0;
+    background: url("../images/footer.png") no-repeat 0 -2.4rem/cover;
+}
+#footer ul li a p{
+    font-size:.2rem;
+    color:#999;
+    margin-top:.01rem;
+}
+#footer ul li:nth-child(1) a p{
+    color:#f66000;
+}
